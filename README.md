@@ -28,8 +28,8 @@ And it only adds ~100 lines to your project.
 ## Methods
 -----
 * `logger.init` - Initialises the logger
-* `logger.log` - Logs the message via a Desktop Notification
-* `console.log` - Logs the message via a Desktop Notification
+* `logger.log` - Logs the message via a Desktop Notification only
+* `console.log` - Logs the message via a Desktop Notification and in the browser console
 * `logger.destroy` - Reverts console.log to original functionality
 
 ## Browser Support
