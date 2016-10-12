@@ -6,7 +6,7 @@ Notification Logger helps provide desktop notification for your console messages
 
 During development, You have to check the browser's inspector periodically to see what your console.log()'s are saying.
 
-With notification-logger, you can develop and debug web apps and see console messages as Desktop Notifications.
+With [notification-logger](https://hkirat.github.io/notification-logger/), you can develop and debug web apps and see console messages as Desktop Notifications.
 
 And it only adds ~100 lines to your project.
 
