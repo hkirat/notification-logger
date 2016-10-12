@@ -10,7 +10,7 @@
 	    } else if (Notification.permission !== 'denied') {
 	    	Notification.requestPermission(function (permission) {
 				if (permission === "granted") {
-					new Notification('alert' ,{body: body});
+					new Notification(title ,{body: body});
 				}
 	    });
 	  }
@@ -26,7 +26,7 @@
 		    } else if (Notification.permission !== 'denied') {
 				Notification.requestPermission(function (permission) {
 					if (permission === "granted") {
-						new Notification('alert' ,{body: body});
+						new Notification(title ,{body: body});
 					}
 				});
 			}
