@@ -11,6 +11,13 @@ Notification Logger helps provide desktop notification for your console messages
  - include notification-logger.js
  - Initialise with logger.init()
 
+### Methods
+-----
+* `logger.init` - Initialises the logger
+* `logger.log` - Logs the message via a Desktop Notification
+* `console.log` - Logs the message via a Desktop Notification
+* `logger.destroy` - Reverts console.log to previous functionality
+
 ### Browser Support
 
 Works best on latest versions of Google Chrome, Firefox and Safari.
