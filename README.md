@@ -1,4 +1,4 @@
-# Notification Logger
+# Notification Logger [![npm version](https://badge.fury.io/js/notification-logger.svg)](https://badge.fury.io/js/notification-logger)
 
 Ever wondered why you have to open the console every time you want to want to log a variable?
 
