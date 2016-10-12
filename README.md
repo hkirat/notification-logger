@@ -4,6 +4,9 @@ Ever wondered why you have to open the console every time you want to want to lo
 
 Notification Logger helps provide desktop notification for your console messages.
 
+[Demo](https://hkirat.github.io/notification-logger/)
+
+
 ## Screenshot
 
 ![notification-logger](./images/image.png)
