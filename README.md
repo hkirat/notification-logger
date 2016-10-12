@@ -18,7 +18,7 @@ Notification Logger helps provide desktop notification for your console messages
 * `logger.init` - Initialises the logger
 * `logger.log` - Logs the message via a Desktop Notification
 * `console.log` - Logs the message via a Desktop Notification
-* `logger.destroy` - Reverts console.log to previous functionality
+* `logger.destroy` - Reverts console.log to original functionality
 
 ## Browser Support
 
