@@ -1,3 +1,17 @@
 ## Notification Logger
+
 Ever wondered why you have to open the console every time you want to want to log a variable? 
 Notification Logger helps provide desktop notification for your console messages.
+
+### Screenshot
+![notification-logger](./images/image.png)
+
+### Installing
+ - Download the project
+ - include notification-logger.js
+ - Initialise with logger.init()
+
+### Browser Support
+
+Works best on latest versions of Google Chrome, Firefox and Safari.
+
