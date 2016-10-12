@@ -20,6 +20,8 @@ And it only adds ~100 lines to your project.
 
 ## Installing
  - Download the project
+   - npm install notification-logger
+   - git clone https://github.com/hkirat/notification-logger.git
  - include notification-logger.js
  - Initialise with logger.init()
 
