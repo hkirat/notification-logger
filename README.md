@@ -36,3 +36,6 @@ And it only adds ~100 lines to your project.
 
 Works best on latest versions of Google Chrome, Firefox and Safari.
 
+## To Do
+ - Add Custom Icon to Notifications
+ - Unwrap Objects while Logging them as Desktop Notification
