@@ -25,8 +25,13 @@
 			position:relative;
 			top:1px;
 		}
-		 #css-input { border-color:#cccccc; padding:15px; font-size:21px; border-width:3px; border-radius:13px;  box-shadow: 2px 0px 18px 0px rgba(7,2,46,.46);  font-weight:normal; font-style:none; font-family:monospace;  } 
-		 #css-input:focus { outline:none; } 
+		#css-input { border-color:#cccccc; padding:15px; font-size:21px; border-width:3px; border-radius:13px;  box-shadow: 2px 0px 18px 0px rgba(7,2,46,.46);  font-weight:normal; font-style:none; font-family:monospace;  } 
+		#css-input:focus { outline:none; } 
+		#css-input-1 { border-color:#cccccc; padding:15px; font-size:21px; border-width:3px; border-radius:13px;  box-shadow: 2px 0px 18px 0px rgba(7,2,46,.46);  font-weight:normal; font-style:none; font-family:monospace;  } 
+		#css-input:focus { outline:none; } 
+		#css-input-2 { border-color:#cccccc; padding:15px; font-size:21px; border-width:3px; border-radius:13px;  box-shadow: 2px 0px 18px 0px rgba(7,2,46,.46);  font-weight:normal; font-style:none; font-family:monospace;  } 
+		#css-input:focus { outline:none; } 
+		
 		body {
 				text-align: center;
 				font-family: Arial;
@@ -135,9 +140,18 @@
 		<h2>Demo</h2>
 	<center>
 		<br><br><br>
-		<input type="text" id="css-input"><br><br><br>
-		<a href="javascript:my_function();" class="myButton">Console.log(msg)</a>
+		<input type="text" id="css-input" value = "body" onblur="if (this.value == '') {this.value = 'body';}" onfocus="if (this.value == 'body') {this.value = '';}"><br><br><br>
+		<a href="javascript:logWithoutTitle();" class="myButton">Console.log(msg)</a>
 	</center>
+
+	<center>
+		<br><br><br>
+		<input type="text" id="css-input-1" value = "title" onblur="if (this.value == '') {this.value = 'title';}" onfocus="if (this.value == 'title') {this.value = '';}">
+		<input type="text" id="css-input-2" value = "body" onblur="if (this.value == '') {this.value = 'body';}" onfocus="if (this.value == 'body') {this.value = '';}"><br><br><br>
+		<a href="javascript:logWithTitle();" class="myButton">Console.log(msg, title)</a>
+	</center>
+
+
 	</div>
 	<div class="section  section--inverted">
 		<h2>Features</h2><br>
@@ -153,8 +167,11 @@
 
 
 	<script>
-		var my_function = function() {
+		var logWithoutTitle = function() {
 			console.log(document.getElementById("css-input").value);
+		}
+		var logWithTitle = function() {
+			console.log(document.getElementById("css-input-2").value, document.getElementById("css-input-1").value);
 		}
 	</script>
 
