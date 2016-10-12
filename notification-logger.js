@@ -2,7 +2,7 @@
 	var isInitialized = false, _console = {};
 	Notification.requestPermission();
 	function log(body, title) {
-		title = title || "alert";
+		title = title || "Notification";
 		if (!("Notification" in window)) {
 		    alert("This browser does not support desktop notification");
 	  	} else if (Notification.permission === "granted") {
@@ -18,7 +18,7 @@
 
 	function genericLogger() {
 		return function (body, title) {
-			title = title || "alert";
+			title = title || "Notification";
 			if (!("Notification" in window)) {
 			    alert("This browser does not support desktop notification");
 			} else if (Notification.permission === "granted") {
