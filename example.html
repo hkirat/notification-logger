@@ -9,9 +9,28 @@
 	<script>
 		logger.init();
 		var a = 2;
-		var b = "I would like to alert this";
+		var b = "I would like to log this";
+
+		/*
+			Logs the variable b as Desktop Notification
+		*/
 		logger.log(b);
+
+		/*
+			Logs the variable a as Desktop Notification along with a title
+		*/
 		console.log(a, "title");
+
+		/*
+			Reverts console.log to original functionality.
+		*/
+		logger.destroy();
+
+		/*
+			Logs the variable simply in the console.
+		*/
+		console.log(a, "title");
+
 	</script>
 </body>
 </html>
