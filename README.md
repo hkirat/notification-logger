@@ -8,7 +8,7 @@ During development, You have to check the browser's inspector periodically to se
 
 With [notification-logger](https://hkirat.github.io/notification-logger/), you can develop and debug web apps and see console messages as Desktop Notifications.
 
-And it only adds ~100 lines to your project.
+And it only adds ~50 lines to your project.
 
 
 [Demo](https://hkirat.github.io/notification-logger/)
