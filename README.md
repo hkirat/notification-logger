@@ -19,11 +19,11 @@ And it only adds ~50 lines to your project.
 ![notification-logger](./images/image.png)
 
 ## Installing
- - Download the project
-   - npm install notification-logger
-   - git clone https://github.com/hkirat/notification-logger.git
- - include notification-logger.js
- - Initialise with logger.init()
+ - Use `npm` or `git clone` to download the module.
+   - `npm install notification-logger`
+   - `git clone https://github.com/hkirat/notification-logger.git`
+ - include `notification-logger.js` or `notification-logger.min.js`
+ - Initialise with `logger.init()`
 
 ## Methods
 -----
