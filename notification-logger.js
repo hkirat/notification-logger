@@ -1,12 +1,19 @@
 (function() {
 	var isInitialized = false, _console = {};
 	Notification.requestPermission();
+	// Get current notification icon
+	icon = "notifications.png"
+	
+	function modifyIcon(icon_path) {
+		logger.icon = icon_path;
+	}
+
 	function log(body, title) {
 		title = title || "Notification";
 		if (!("Notification" in window)) {
 		    alert("This browser does not support desktop notification");
 	  	} else if (Notification.permission === "granted") {
-			new Notification(title ,{body: body});
+			new Notification(title ,{body: body, icon: logger.icon});
 	    } else if (Notification.permission !== 'denied') {
 	    	Notification.requestPermission(function (permission) {
 				if (permission === "granted") {
@@ -40,6 +47,8 @@
 	window.logger = {
 		log: log,
 		init: init,
-		destroy:destroy
+		destroy:destroy,
+		modifyIcon: modifyIcon,
+		icon: icon
 	}
 })();
