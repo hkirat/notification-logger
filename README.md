@@ -10,6 +10,8 @@ With [notification-logger](https://github.com/hkirat/notification-logger/), you 
 
 And it only adds ~50 lines to your project.
 
+[Demo](http://singhharkirat.com/notification-logger)
+
 Initial repo forked from [chinchang](https://github.com/chinchang)'s project [screenlog.js](https://github.com/chinchang/screenlog.js).
 Check out his awesomeness over [here](https://kushagragour.in/)
 
