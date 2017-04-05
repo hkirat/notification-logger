@@ -13,6 +13,7 @@ And it only adds ~50 lines to your project.
 
 [Demo](https://hkirat.github.io/notification-logger/)
 
+Website inspired from [https://github.com/chinchang](chinchang's) [Hint.css](https://kushagragour.in/lab/hint/) website.
 
 ## Screenshot
 
