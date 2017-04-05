@@ -22,7 +22,7 @@
 	}
 
 	function err(body, title) {
-		log(body, title, log.sadIcon);
+		log(body, title, logger.sadIcon);
 	}
 
 	function originalFnCallDecorator(fn, fnName) {
