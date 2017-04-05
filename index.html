@@ -164,8 +164,8 @@
 	<h2>Error Logs</h2>
 	<center>
 		<br><br>
-		<input type="text" id="css-input-1" value = "title" onblur="if (this.value == '') {this.value = 'title';}" onfocus="if (this.value == 'title') {this.value = '';}">
-		<input type="text" id="css-input-2" value = "body" onblur="if (this.value == '') {this.value = 'body';}" onfocus="if (this.value == 'body') {this.value = '';}"><br><br><br>
+		<input type="text" id="css-input-3" value = "title" onblur="if (this.value == '') {this.value = 'title';}" onfocus="if (this.value == 'title') {this.value = '';}">
+		<input type="text" id="css-input-4" value = "body" onblur="if (this.value == '') {this.value = 'body';}" onfocus="if (this.value == 'body') {this.value = '';}"><br><br><br>
 		<a href="javascript:errWithTitle();" class="myButton">logger.err(body, title)</a>
 	</center>
 
@@ -194,7 +194,7 @@
 			console.log(document.getElementById("css-input-2").value, document.getElementById("css-input-1").value);
 		}
 		var errWithTitle = function() {
-			logger.err(document.getElementById("css-input-2").value, document.getElementById("css-input-1").value);
+			logger.err(document.getElementById("css-input-4").value, document.getElementById("css-input-3").value);
 		}
 
 	</script>
