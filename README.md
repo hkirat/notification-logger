@@ -6,14 +6,15 @@ Notification Logger helps provide desktop notification for your console messages
 
 During development, You have to check the browser's inspector periodically to see what your console.log()'s are saying.
 
-With [notification-logger](https://hkirat.github.io/notification-logger/), you can develop and debug web apps and see console messages as Desktop Notifications.
+With [notification-logger](https://github.com/hkirat/notification-logger/), you can develop and debug web apps and see console messages as Desktop Notifications.
 
 And it only adds ~50 lines to your project.
-
 
 [Demo](https://hkirat.github.io/notification-logger/)
 
 Website inspired from [https://github.com/chinchang](chinchang's) [Hint.css](https://kushagragour.in/lab/hint/) website.
+Initial repo forked from [chinchang](https://github.com/chinchang)'s project [screenlog.js](https://github.com/chinchang/screenlog.js).
+Check out his awesomeness over [here](https://kushagragour.in/)
 
 ## Screenshot
 
@@ -40,3 +41,6 @@ Works best on latest versions of Google Chrome, Firefox and Safari.
 ## To Do
  - Add Custom Icon to Notifications
  - Unwrap Objects while Logging them as Desktop Notification
+
+## Credits
+ - Icons Made by [http://www.flaticon.com/authors/roundicons](roundicons).

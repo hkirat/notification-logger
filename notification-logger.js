@@ -1,8 +1,12 @@
 (function() {
 	var isInitialized = false, _console = {};
 	Notification.requestPermission();
-	function log(body, title) {
-		var icon = './notifications.png'
+	// Get current notification icon
+	happyIcon = "happy.svg"
+	sadIcon = "sad.svg"
+
+	function log(body, title, icon) {
+		icon = icon || logger.happyIcon;
 		title = title || "Notification";
 		if (!("Notification" in window)) {
 		    alert("This browser does not support desktop notification");
@@ -15,6 +19,10 @@
 				}
 	    });
 	  }
+	}
+
+	function err(body, title) {
+		log(body, title, log.sadIcon);
 	}
 
 	function originalFnCallDecorator(fn, fnName) {
@@ -40,7 +48,10 @@
 
 	window.logger = {
 		log: log,
+		err: err,
 		init: init,
-		destroy:destroy
+		destroy:destroy,
+		happyIcon: happyIcon,
+		sadIcon: sadIcon
 	}
 })();
