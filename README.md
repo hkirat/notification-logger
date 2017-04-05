@@ -38,3 +38,6 @@ Works best on latest versions of Google Chrome, Firefox and Safari.
 ## To Do
  - Add Custom Icon to Notifications
  - Unwrap Objects while Logging them as Desktop Notification
+
+## Credits
+ - Icons Made by [http://www.flaticon.com/authors/roundicons](roundicons).

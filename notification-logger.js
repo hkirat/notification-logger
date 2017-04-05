@@ -2,25 +2,27 @@
 	var isInitialized = false, _console = {};
 	Notification.requestPermission();
 	// Get current notification icon
-	icon = "notifications.png"
-	
-	function modifyIcon(icon_path) {
-		logger.icon = icon_path;
-	}
+	happyIcon = "happy.svg"
+	sadIcon = "sad.svg"
 
-	function log(body, title) {
+	function log(body, title, icon) {
+		icon = icon || logger.happyIcon;
 		title = title || "Notification";
 		if (!("Notification" in window)) {
 		    alert("This browser does not support desktop notification");
 	  	} else if (Notification.permission === "granted") {
-			new Notification(title ,{body: body, icon: logger.icon});
+			new Notification(title ,{body: body, icon: icon});
 	    } else if (Notification.permission !== 'denied') {
 	    	Notification.requestPermission(function (permission) {
 				if (permission === "granted") {
-					new Notification(title ,{body: body});
+					new Notification(title ,{body: body, icon: icon});
 				}
 	    });
 	  }
+	}
+
+	function err(body, title) {
+		log(body, title, log.sadIcon);
 	}
 
 	function originalFnCallDecorator(fn, fnName) {
@@ -46,9 +48,10 @@
 
 	window.logger = {
 		log: log,
+		err: err,
 		init: init,
 		destroy:destroy,
-		modifyIcon: modifyIcon,
-		icon: icon
+		happyIcon: happyIcon,
+		sadIcon: sadIcon
 	}
 })();
