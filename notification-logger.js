@@ -3,7 +3,7 @@
 	Notification.requestPermission();
 	// Get current notification icon
 	happyIcon = "happy.png"
-	sadIcon = "sad.png"
+	sadIcon = "unhappy.png"
 
 	function log(body, title, icon) {
 		icon = icon || logger.happyIcon;
