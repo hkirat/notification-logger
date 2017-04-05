@@ -2,8 +2,8 @@
 	var isInitialized = false, _console = {};
 	Notification.requestPermission();
 	// Get current notification icon
-	happyIcon = "happy.svg"
-	sadIcon = "sad.svg"
+	happyIcon = "happy.png"
+	sadIcon = "sad.png"
 
 	function log(body, title, icon) {
 		icon = icon || logger.happyIcon;
